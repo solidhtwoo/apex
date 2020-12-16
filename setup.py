@@ -77,7 +77,7 @@ def get_cuda_bare_metal_version(cuda_dir):
     release_idx = output.index("release") + 1
     release = output[release_idx].split(".")
     bare_metal_major = release[0]
-    bare_metal_minor = release[1][0]
+    bare_metal_minor = '0'
 
     return raw_output, bare_metal_major, bare_metal_minor
 
